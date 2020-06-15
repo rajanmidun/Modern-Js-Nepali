@@ -1,14 +1,19 @@
-// Template string or Template literal
-// before es6
-let firstName = "Rajan";
-let lastName = "Midun";
+// Destructuring is a JavaScript expression that makes it possible to unpack
+// values from arrays,or properties from objects, into distinct variables.
 
-// console.log(firstName + " \n" + lastName);
+//Array destructuring'
+// const names = ['ashish', 'suraj', 'rajan', 'tashi'];
+// // const friend1 = names[0];
+// // const friend2 = names[1];
 
-// // es6
-console.log(`My name is ${firstName} ${lastName}`);
-console.log(firstName.startsWith('R'));
-console.log(firstName.endsWith('d'));
-console.log(firstName.includes('jan'));
-console.log(firstName.repeat(12));
-// console.log(`Sum of 2 and 3 is ${2 + 3}`);
+// const [friend1, , , friend4] = names;
+
+// console.log(friend1);
+// console.log(friend4);
+
+let a = 34;
+let b = 56;
+
+[b, a] = [a, b];
+console.log(a);
+console.log(b);
