@@ -1,8 +1,12 @@
-//-----------------DEFAULT PARAMETER--------------------
+//-----------------REST PARAMETER--------------------
 
-function sum(a = 12, b = 12) {
-  console.log(`Sum is ${a + b}`);
+function sum(...datas) {
+  console.log(datas);
+  let total = 0;
+  for (let i = 0; i < datas.length; i++) {
+    total += datas[i];
+  }
+  console.log(`SUm is ${total}`);
 }
 
-// sum();
-sum(13, 14);
+sum(12, 13, 21323, 23, 23, 23, 23);
